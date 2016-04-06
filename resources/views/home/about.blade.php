@@ -131,7 +131,7 @@
 </div>
 
 <div id="foot">
-    ©2011 - 360 HOA Management, LLC P.O. Box 506 Edisto Island, SC  29438 Phone 843-869-3601 |
+    ©2016 - 360 HOA Management, LLC P.O. Box 506 Edisto Island, SC  29438 Phone 843-869-3601 |
     <a href="/about">About Us</a> |
     <a href="mailto:renae@360hoamanagement.com">Contact Us</a>
 </div>

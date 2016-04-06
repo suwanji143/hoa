@@ -1,0 +1,589 @@
+*{margin:0;padding:0}
+body{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		line-height:22px;
+		color:#777;
+		background:url(../images/img_bg.jpg);
+		height:100%
+}
+html{height:100%}
+
+#wrap{
+	display:block;width:100%;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0 auto -51px
+}
+
+#head {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    height: 142px;
+    position: relative;
+}
+
+#head .hoa360{
+	display:block;
+	position:absolute;
+	left:0;
+	top:47px;
+	background:url(../images/img_hoa.png) no-repeat;
+	width:348px;
+	height:45px;
+}
+
+#head #clntPrtl{
+		z-index:10;
+		display:block;
+		position:absolute;
+		right:0;
+		background:url(../images/img_clientPortal.png) no-repeat center bottom;
+		background-size: 100% 100%;
+		width:221px;
+		height:280px;
+		top:-200px;
+		cursor:pointer
+}
+
+#head #clntPrtl .lbl {
+	display:block;
+	position:absolute;
+	background:url(../images/portal2.png) no-repeat;
+	width:125px;
+	height:19px;
+	left:49px;
+	bottom:40px;
+}
+
+#head #clntPrtl ul{
+		list-style:none;
+		position:absolute;
+		bottom:80px;
+		left:20px
+}
+
+#head #clntPrtl li{
+	display:block;
+	height:20px
+}
+
+#head #clntPrtl a{
+	display:block;
+	color:#FFFFFF;
+	background:url(../images/trig.png) no-repeat 0 5px;
+	padding-left:13px;
+}
+
+#cont {
+	display:block;
+	width:100%;
+	min-width:960px;
+	height:500px;
+	position:relative;
+	background:url(../images/port.jpg) 50% 50%;
+	border-top:solid 1px #A0A4A6;
+}
+
+#cont .shad_lt{
+		display:block;background:url(../images/shad_lt.png);
+		width:99px;
+		height:500px;
+		position:absolute;
+		left:0
+}
+
+#cont .shad_rt{
+		display:block;background:url(../images/shad_rt.png);
+		width:99px;
+		height:500px;
+		position:absolute;
+		right:0;
+}
+
+#cont .push{height:100px}
+#cont.clearBg{
+	background:#C7C8CA;
+	border-bottom:solid 1px #d1d1d1;
+}
+#wCont {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    width: 960px;
+    height: 500px
+}
+#wCont #wheel {
+    display: block;
+    width: 494px;
+    height: 494px;
+    float: left;
+    background: url(../images/wheel.png);
+    margin-top: 4px
+}
+#wCont #wheel div {
+    cursor: pointer
+}
+#wCont #wheel .h1 {
+    display: block;
+    position: absolute;
+    background: url(../images/h1.png);
+    width: 157px;
+    height: 238px;
+    top: 67px;
+    left: 21px;
+    opacity: 0
+}
+#wCont #wheel .h2 {
+    display: block;
+    position: absolute;
+    background: url(../images/h2.png);
+    width: 153px;
+    height: 146px;
+    top: 276px;
+    left: 27px;
+    opacity: 0
+}
+#wCont #wheel .h3 {
+    display: block;
+    position: absolute;
+    background: url(../images/h3.png);
+    width: 248px;
+    height: 144px;
+    top: 332px;
+    left: 100px;
+    opacity: 0
+}
+#wCont #wheel .h4 {
+    display: block;
+    position: absolute;
+    background: url(../images/h4.png);
+    width: 151px;
+    height: 154px;
+    top: 298px;
+    left: 293px;
+    opacity: 0
+}
+#wCont #wheel .h5 {
+    display: block;
+    position: absolute;
+    background: url(../images/h5.png);
+    width: 155px;
+    height: 268px;
+    top: 92px;
+    left: 319px;
+    opacity: 0
+}
+#wCont #wheel .h6 {
+    display: block;
+    position: absolute;
+    background: url(../images/h6.png);
+    width: 291px;
+    height: 153px;
+    top: 25px;
+    left: 117px;
+    opacity: 0
+}
+#wCont #box {
+    display: block;
+    width: 440px;
+    height: 500px;
+    float: left;
+    margin-left: 20px;
+    position: relative
+}
+#wCont #box #info {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #E4670C;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    border-radius: 10px;
+    padding: 6px;
+    z-index: 9999
+}
+#wCont #box #info .in {
+    display: block;
+    width: 99.5%;
+    height: 99%;
+    background: #D75C02;
+    border-radius: 7px;
+    border: dashed #3c1f0b 1px;
+    overflow: hidden
+}
+#wCont #box #info h1 {
+    display: block;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    text-shadow: 0px 1px #3c1f0b;
+    font-size: 22px
+}
+#wCont #box #info h1 .d {
+    font-size: 10px;
+    text-shadow: none;
+    margin-left: 5px;
+    color: #f1f1f1
+}
+#wCont #box #info p {
+    display: block;
+    width: 99.5%;
+    height: 99%;
+    background: #f5f5f5;
+    padding: 15px;
+    line-height: 30px
+}
+#wCont #box #tagLine {
+    display: block;
+    background: url(../images/tagline.png);
+    width: 348px;
+    height: 32px;
+    position: absolute;
+    top: 297px;
+    left: 47px;
+    z-index: 555
+}
+#wCont #leftSide {
+    display: block;
+    width: 494px;
+    height: 494px;
+    float: left
+}
+#wCont #leftSide .fpo {
+    margin-top: 3px
+}
+#wCont #rightSide {
+    display: block;
+    width: 440px;
+    height: 500px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    color: #FFF
+}
+#wCont #rightSide ol {
+    margin: 50px 0 0 10px
+}
+#wCont #rightSide li {
+    text-shadow: 0px 1px 1px #999999;
+    font-size: 16px;
+    width: 350px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    list-style-position: inside
+}
+#wCont #rightSide a {
+    color: #FFF
+}
+#wCont #rightSide h1 {
+    text-shadow: 0px 1px 1px #999999;
+    margin-top: 50px;
+    width: 350px
+}
+#wCont #rightSide h4 {
+    margin: 5px 20px 20px;
+    color: #555;
+    font: normal 12pt arial
+}
+#foot {
+    display: block;
+    background: #a0a4a6;
+    border-top: solid 1px #81888c;
+    overflow: hidden;
+    height: 35px;
+    width: 100%;
+    min-width: 960px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 50px
+}
+#foot a:link,
+a:visited a:active {
+    color: #D65B00
+}
+#foot a:hover {
+    color: #fff
+}
+form {
+    padding-left: 40px;
+    display: block
+}
+h1 {
+    color: #3b444a;
+    margin: 0 0 10px 20px
+}
+p {
+    padding-left: 40px;
+    color: #000;
+    font: normal 12pt arial
+}
+a {
+    color: #00a9d3
+}
+
+h3, h2 {
+	color:#666 !important;
+}
+
+label {
+    font: normal 12pt arial;
+    color: #666
+}
+
+#wCont #rightSide ol {
+    margin: 20px
+}
+
+#wCont #rightSide ol li.category {
+    width: 270px;
+    list-style-type: none
+}
+
+#wCont #rightSide ol li.category a {
+    color: #DDD;
+    width: 90%;
+    display: block;
+    position: relative;
+    padding: 4px 8px;
+    margin: 5px;
+    text-shadow: 0 -1px #333;
+    text-decoration: none;
+    border: 1px solid #5b636b;
+    border-top-color: #bfd1e1;
+    border-bottom-color: #31373d;
+    text-align: center;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    behavior: url("/media/css/PIE.htc");
+    -webkit-box-shadow: 0 2px 4px #333;
+    -moz-box-shadow: 0 2px 4px #333;
+    box-shadow: 0 2px 4px #333;
+    behavior: url("/media/css/PIE.htc");
+    background-color: #64727a;
+    background-image: -moz-linear-gradient(top, #64727a, #30353a);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #64727a), color-stop(1, #30353a));
+    background-image: linear-gradient(top, #64727a, #30353a);
+    -pie-background: linear-gradient(top, #64727a, #30353a);
+    behavior: url("/media/css/PIE.htc")
+}
+#wCont #rightSide ol li.category a:hover {
+    color: #FFF;
+    border: 1px solid #5c6770;
+    border-top-color: #9fb1c0;
+    border-bottom-color: #31373d;
+    background-color: #92a3b1;
+    background-image: -moz-linear-gradient(top, #92a3b1, #30353a);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #92a3b1), color-stop(1, #30353a));
+    background-image: linear-gradient(top, #92a3b1, #30353a);
+    -pie-background: linear-gradient(top, #92a3b1, #30353a);
+    behavior: url("/media/css/PIE.htc")
+}
+#wCont #rightSide ol li.doc {
+    color: #3f454b
+}
+#wCont #rightSide ol li.doc a {
+    color: #3f454b;
+    font-weight: bold;
+    font-size: 14pt;
+    text-decoration: none;
+    behavior: url("/media/css/PIE.htc")
+}
+#wCont #rightSide ol li.doc a:hover {
+    color: #FFF;
+    text-shadow: 0 0 2px #333
+}
+.login_form,
+.reg_form {
+    text-align: center
+}
+.login_form table,
+.reg_form table {
+    margin: 0 auto
+}
+.login_form table input,
+.reg_form table input {
+    margin-bottom: 15px
+}
+.login_form table label,
+.reg_form table label {
+    color: #3f454b;
+    position: relative;
+    top: -7px;
+    left: -5px;
+    display: block;
+    text-align: right
+}
+.login_form p,
+.reg_form p {
+    margin-bottom: 15px
+}
+.login_form a,
+.reg_form a {
+    color: #3f454b
+}
+.login_form a:hover,
+.reg_form a:hover {
+    color: #FFF;
+    text-decoration: none
+}
+.login_form .fieldWrapper,
+.reg_form .fieldWrapper {
+    text-align: left
+}
+.login_form .fieldWrapper label,
+.reg_form .fieldWrapper label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 150px;
+    margin: 0 5px 0 0;
+    top: 7px
+}
+.login_form .fieldWrapper input,
+.reg_form .fieldWrapper input {
+    float: left
+}
+.login_form .fieldWrapper select,
+.reg_form .fieldWrapper select {
+    position: relative;
+    top: 15px;
+    font-size: 14px
+}
+.login_form .fieldWrapper ul,
+.reg_form .fieldWrapper ul {
+    float: left;
+    position: relative;
+    top: 7px;
+    margin: 0 0 0 5px
+}
+input.button {
+    color: #DDD;
+    position: relative;
+    padding: 4px 8px;
+    margin: 15px 5px 15px;
+    text-shadow: 0 -1px #333;
+    text-decoration: none;
+    border: 1px solid #5b636b;
+    border-top-color: #bfd1e1;
+    border-bottom-color: #31373d;
+    text-align: center;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    behavior: url("/media/css/PIE.htc");
+    -webkit-box-shadow: 0 2px 4px #333;
+    -moz-box-shadow: 0 2px 4px #333;
+    box-shadow: 0 2px 4px #333;
+    behavior: url("/media/css/PIE.htc");
+    background-color: #64727a;
+    background-image: -moz-linear-gradient(top, #64727a, #30353a);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #64727a), color-stop(1, #30353a));
+    background-image: linear-gradient(top, #64727a, #30353a);
+    -pie-background: linear-gradient(top, #64727a, #30353a);
+    behavior: url("/media/css/PIE.htc")
+}
+input.button:hover {
+    color: #FFF;
+    border: 1px solid #5c6770;
+    border-top-color: #9fb1c0;
+    border-bottom-color: #31373d;
+    background-color: #92a3b1;
+    background-image: -moz-linear-gradient(top, #92a3b1, #30353a);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #92a3b1), color-stop(1, #30353a));
+    background-image: linear-gradient(top, #92a3b1, #30353a);
+    -pie-background: linear-gradient(top, #92a3b1, #30353a);
+    behavior: url("/media/css/PIE.htc")
+}
+#wCont #leftSide .fpo {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: 7px;
+    -webkit-box-shadow: 0 0 10px #111;
+    -moz-box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 10px #111;
+    behavior: url("/media/css/PIE.htc")
+}
+ul.errorlist {
+    color: red;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -15px
+}
+ul.errorlist li {
+    list-style-type: none
+}
+.complete {
+    margin: 0 auto;
+    width: 500px
+}
+.complete h1 {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 15px
+}
+.complete p {
+    text-align: center;
+    width: 500px;
+    padding: 0
+}
+.about {
+    text-align: center;
+    padding: 0 0 30px
+}
+.about strong {
+    color: #3B444A
+}
+.about p {
+    margin: 15px 0;
+    font-size: 17px;
+    font-style: italic;
+    text-align: left;
+    color: #222
+}
+.about ul li {
+    font-size: 12pt;
+    text-align: left;
+    margin: 0 0 0 75px;
+    color: #333
+}
+
+.error-message {
+	width: 30%;
+	color: #000;
+	padding: 5px 0;
+	text-align: center;
+	background: #FFFFBF;
+	margin: -20px auto 0;
+	border: 1px solid #FF0;
+}
+
+.confirm-message {
+	color: green;
+	padding: 10px;
+	background: #BFFFCF;
+	font-weight: bold;
+	margin: 10px auto;
+	border: 1px solid green;
+}

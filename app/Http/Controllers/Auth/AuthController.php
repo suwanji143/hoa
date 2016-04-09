@@ -29,7 +29,6 @@ class AuthController extends Controller
      * @var string
      */
     protected $redirectTo = '/';
-
     /**
      * Create a new authentication controller instance.
      *
@@ -49,9 +48,10 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
-            'name_2' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
+            'first_name' => 'required|max:300',
+            'last_name' => 'required|max:300',
+            'username' => 'required||max:300|unique:users',
+            'email' => 'required|email|max:300|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
     }
@@ -64,10 +64,12 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+       // echo '<pre>';print_r($_REQUEST);print_r($data);exit;
         return User::create([
-            'name' => $data['name'],
-            'name_2' => $data['name_2'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
             'email' => $data['email'],
+            'username' => $data['username'],
             'password' => bcrypt($data['password']),
         ]);
     }

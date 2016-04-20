@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class ClientController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-       // $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -24,18 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+       // echo 'hi';
        // $this->middleware('auth');
-        return view('home/index');
+        return view('client/index');
        // return view('home');
     }
-    public function about()
-    {
-        // $this->middleware('auth');
-        return view('home/about');
-        // return view('home');
-    }
-    public function test()
-    {
-       echo 'test';
-    }
+
 }

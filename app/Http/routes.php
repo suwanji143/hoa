@@ -11,6 +11,12 @@
 |
 */
 
+Route::get('/access', function(){
+    echo 'you have access';
+
+})->middleware('isAdmin');
+
+Route::get('/admin','AdminController@index');
 //Route::get('/', 'IndexController@index');
 
 Route::auth();
@@ -18,5 +24,6 @@ Route::auth();
 //Route::get('/home', 'HomeController@index');
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
+Route::get('/client', 'ClientController@index');
 
 Route::get('/home/test', 'HomeController@test');

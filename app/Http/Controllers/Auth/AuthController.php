@@ -7,7 +7,7 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-
+use Illuminate\Support\Facades\Auth;
 class AuthController extends Controller
 {
     /*
@@ -28,7 +28,13 @@ class AuthController extends Controller
      *
      * @var string
      */
+
+    //Redirection is based on this param , I am using custom method
     protected $redirectTo = '/';
+
+
+
+
     /**
      * Create a new authentication controller instance.
      *
@@ -39,6 +45,17 @@ class AuthController extends Controller
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
 
+    protected function authenticated($request, $user)
+    {
+        //var_dump(Auth::user()->isAdmin());exit;
+        return back();
+//        if( Auth::check() && Auth::user()->isAdmin()) {
+//            //return redirect()->intended('/admin');
+//            return back();
+//        }
+//
+//        return redirect()->intended('/lll');
+    }
     /**
      * Get a validator for an incoming registration request.
      *

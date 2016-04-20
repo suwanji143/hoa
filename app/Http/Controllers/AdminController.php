@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class AdminController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,18 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-       // $this->middleware('auth');
-        return view('home/index');
-       // return view('home');
-    }
-    public function about()
-    {
-        // $this->middleware('auth');
-        return view('home/about');
-        // return view('home');
-    }
-    public function test()
-    {
-       echo 'test';
+        return view('admin/index');
     }
 }
